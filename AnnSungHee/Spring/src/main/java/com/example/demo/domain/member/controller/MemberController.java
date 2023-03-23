@@ -39,7 +39,7 @@ public class MemberController {
     @PostMapping("/sign-in")
     public String signIn(@RequestBody MemberLoginForm form) {
         log.info("signIn(): " + form);
-
+        System.out.println();
         return memberService.signIn(form.toMemberLoginRequest());
     }
 
